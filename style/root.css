@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;0,900;1,400;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --mostarda: #D3AC2B;
+    --mostarda-hover: #A38522;
+    --azul: #333D51;
+    --azul-hover: #242B38;
+    --amarelo-cinzento: #E3E2D3;
+    --cinza: #CBD0D8;
+    --branco-amarelado: #F4F3EA;
+
+    --branco: #EBEBEB;
+    --preto: #171717;
+    --erro: #DF3F3F;
+    --correto: #40A84A;
+
+    --erro-fundo: rgb(223, 63, 63, 0.15);
+    --erro-fundo: rgb(64, 168, 74, 0.15);
+
+    --sombra: 0px 2px 4px rgb(23 , 23, 23, 0.4);
+
+    background: var(--branco-amarelado);
+    color: var(--preto);
+}
+
+/* ================================== */
+/*         HEADER E FOOTER            */
+/* ================================== */
+
+.header, .footer {
+    background-color: var(--azul);
+}
+
+.header {
+    min-height: 7rem;
+    min-width: 100%;
+}
+
+header, ul#center-menu {
+    display: grid;
+    /* grid-template-areas: 
+    'logo center-menu side-menu'; */
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 3rem;
+}
+
+ul#center-menu {
+    gap: 3rem;
+    padding: 0;
+}
+
+header .left {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+}
+
+header .center {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+header .right {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+    justify-content: end;
+}
+
+/* .header.grid-item {
+
+} */
+
+.nav-bar-item {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: var(--branco-amarelado);
+    /* letter-spacing: 3px; */
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.footer-menu-title {
+    color: var(--mostarda);
+    /* border-bottom: var(--mostarda) solid 1px; */
+}
+.footer-menu-item {
+    font-size: 10px;
+}
+
+.nav-bar-item:hover {
+    color: var(--mostarda-hover);
+    text-decoration: none;
+}
+
+.nav-bar-item:visited {
+    color: var(--branco-amarelado);
+    text-decoration: none;
+}
+
+.nav-bar-item.focus {
+    color: var(--mostarda);
+}
+
+/* ================================== */
+/*               FOOTER               */
+/* ================================== */
+
+/* ================================== */
+/* ITENS BÁSICOS A SEREM REUTILIZADOS */
+/* ================================== */
+
+.text {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.text.pequeno {
+    font-size: 10px;
+}
+
+.text.normal {
+    font-size: 13px;
+}
+
+.text.grande {
+    font-size: 16px;
+}
+
+.text.negrito, strong {
+    font-weight: bold;
+}
+
+.title {
+    font-family: 'Merriweather', serif;
+}
+
+h1.titulo-h1 {
+    color: var(--mostarda);
+    font-size: 40px;
+}
+
+h2.subtitulo-h2 {
+    color: var(--azul);
+    font-size: 32px;
+}
+
+h3.subtitulo-h3 {
+    color: var(--mostarda);
+    font-size: 24px;
+}
+
+h4.subtitulo-h4 {
+    color: var(--azul);
+    font-size: 20px;
+}
+
+.etiqueta {
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.all-caps, .info, .botao {
+    text-transform: uppercase;
+}
+
+.etiqueta.amarela {
+    color: var(--mostarda);
+}
+
+.etiqueta.azul {
+    color: var(--azul);
+}
+
+.info.destacada {
+    font-weight:bold;
+    font-size: 16px;
+}
+
+.info.destacada-regular {
+    font-weight:regular;
+    font-size: 16px;
+}
+
+.info.nao-destacada {
+    font-weight:regular;
+    font-size: 13px;
+}
+
+.info.nao-destacada-negrito {
+    font-weight:bold;
+    font-size: 13px;
+}
+
+.link, .link:visited {
+    color: var(--azul);
+}
+
+
+.link.texto {
+    font-size: 13px;
+    font-weight: regular;
+}
+
+.link.texto:hover {
+    color: var(--azul-hover);
+}
+
+.link.grande, .link.destacado {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.link.destacado {
+    text-transform: uppercase;
+}
+
+.item-correto {
+    color: var(--correto);
+}
+
+.item-erro {
+    color: var(--erro);
+}
+
+/* ================================== */
+/*             FORMULÁRIOS            */
+/* ================================== */
+
+form {
+    background-color: var(--amarelo-cinzento);
+    border-radius: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input, textarea, select {
+    box-shadow: var(--sombra);
+    border-radius: 5px;
+    border: none;
+    padding: 5.5px;
+    background-color: var(--branco-amarelado);
+}
+
+select {
+  appearance: none;
+
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  /* width: 100%; */
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+.select {
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch; 
+    border: 1px solid var(--select-border);
+    /* padding: 5.5px; */
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    display: grid;
+
+    grid-template-areas: "select";
+    align-items: center;
+}
+
+select, .select:after {
+  grid-area: select;
+}
+
+.select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    margin: 5.5px;
+    background-color: var(--mostarda);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+}
+
+.select:not(.select--multiple)::after
+
+select.combo-box option:hover {
+    display: none;
+    background-color: var(--mostarda);
+}
+
+/* ================================== */
+/*               BOTOES               */
+/* ================================== */
+
+.botao {
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: var(--sombra);
+}
+
+.botao.extra-grande {
+    font-size: 20px;
+    padding: 15.5px 25px;
+}
+
+.botao.grande {
+    font-size: 16px;
+    padding: 14px 25px;
+}
+
+.botao.normal {
+    font-size: 13px;
+    padding: 9px 21px;
+}
+
+.botao.pequeno {
+    font-size: 10px;
+    padding: 7px 15.5px;
+}
+
+.botao.amarelo {
+    background-color: var(--mostarda);
+    color: var(--azul);
+}
+
+.botao.amarelo:hover {
+    background-color: var(--mostarda-hover);
+}
+
+.botao.azul {
+    background-color: var(--azul);
+    color: var(--branco-amarelado);
+}
+
+.botao.azul:hover {
+    background-color: var(--azul-hover);
+}

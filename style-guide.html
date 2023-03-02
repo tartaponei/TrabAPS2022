@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="./style/style-guide.css">
+
+    <title>Guia de Estilo</title>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div class="grid-item left">
+                <img src="" class = "logo" alt="">
+            </div>
+            
+            <div class="grid-item center">
+                <nav id="nav-bar">
+                    <ul id="center-menu">
+                        <a href="#">
+                            <li class="nav-bar-item text focus">Artigos</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-bar-item text">Eventos</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-bar-item text">Sobre</li>
+                        </a>                       
+                    </ul>
+                </nav>
+            </div>
+           
+            <div class="grid-item right">
+                <ul id="side-menu">
+                    <a href="#">
+                        <li class="text nav-bar-item">Área do Cadastrador</li>
+                    </a>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="content">
+        <div class="left-content">
+            <div class="text-area">
+                <div class="title-area">
+                    <h1 class="title titulo-h1">Título H1 - 40 px</h1>
+                    <h2 class="title subtitulo-h2">Subtítulo H2 - 32 px</h2>
+                    <h3 class="title subtitulo-h3">Subtítulo H3 - 24 px</h3>
+                    <h4 class="title subtitulo-h4">Subtítulo H4 - 20 px</h4>
+                </div>
+
+                <div class="normal-text-area">
+                    <p class="text pequeno negrito"><strong>Texto pequeno - 10 px</strong></p>
+                    <p class="text pequeno">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue, nisi nec.</p>
+
+                    <p class="text normal negrito"><strong>Texto normal - 13 px</strong></p>
+                    <p class="text normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue, nisi nec.</p>
+
+                    <p class="text grande negrito"><strong>Texto grande - 16 px</strong></p>
+                    <p class="text grande">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue, nisi nec.</p>
+                </div>
+
+                <div class="link-area">
+                    <a href="#" class="text link texto">Links em texto</a>
+                    <a href="#" class="text link destacado">Links destacado</a>
+                    <a href="#" class="text link grande">Links grande</a>
+                </div>
+
+                <div class="label-area">
+                    <span class="text etiqueta amarela">Etiqueta - 14px</span>
+                    <span class="text etiqueta azul">Etiqueta - 14px</span>
+                </div>
+
+                <div class="list-area">
+                    <ul class="lista-inordenada">
+                        <li class="text item-lista item-correto">Item certo</li>
+                        <li class="text item-lista item-erro">Item errado</li>
+                        <li class="text item-lista">Item 3</li>
+                    </ul>
+                    <ol class="lista-ordenada">
+                        <li class="text item-lista">Item 1</li>
+                        <li class="text item-lista">Item 2</li>
+                        <li class="text item-lista">Item 3</li>
+                    </ol>
+                </div>
+
+                <div class="info-area">
+                    <p class="text info destacada">Informação Destacada</p>
+                    <p class="text info destacada-regular">Informação destacada regular</p>
+                    <p class="text info nao-destacada">Informação não destacada</p>
+                    <p class="text info nao-destacada-negrito">Informação não destacada negrito</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-content">
+            <div class="form-area">
+                <div class="button-area">
+                    <a href="" class="text botao grande amarelo">Botão grande</a>
+                    <a href="" class="text botao normal amarelo">Botão normal</a>
+                    <a href="" class="text botao pequeno amarelo">Botão pequeno</a>
+                    <a href="" class="text botao extra-grande amarelo">Botão extra grande</a>
+                    <a href="" class="text botao grande azul">Botão grande</a>
+                </div>
+
+                <div class="form">
+                    <form action="" class="formulario">
+                        <div class="right-form">
+                            <div class="field-area">
+                                <label for="" class="text label-form">Campo de texto</label><br>
+                                <input type="text" name="" id=""><br>
+                            </div>
+                            
+                            <div class="field-area">
+                               <label for="" class="text label-form">Text area</label><br>
+                                <textarea name="" id="" cols="30" rows="10"></textarea><br> 
+                            </div>
+                            
+                            <div class="field-area">
+                                <label for="" class="text label-form">Checkbox</label><br>
+
+                                <div class="checkbox-area">
+                                    <input type="checkbox" name="" id=""> <span class="text">Item 1</span>  <br>
+                                    <input type="checkbox" name="" id="" class="text"> <span class="text">Item 2</span> <br>
+                                </div>
+                            </div>
+
+                            <div class="field-area">
+                                <label for="" class="text label-form">Radio button</label><br>
+
+                                <div class="checkbox-area">
+                                    <input type="radio" name="" id=""> <span class="text">Item 1</span>  <br>
+                                    <input type="radio" name="" id="" class="text"> <span class="text">Item 2</span> <br>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="left-form">
+                            <div class="field-area">
+                                <label for="" class="label-form text">Combo box</label><br>
+                                <div class="select">
+                                    <select class="text" name="" id="">
+                                        <option value="" class="combo-box-item text"><span class="text">Item 1</span></option>
+                                        <option value="" class="combo-box-item text"><span class="text">Item 2</span></option>
+                                        <option value="" class="combo-box-item text" ><span class="text">Item 3</span></option>
+                                        <option value="" class="combo-box-item text"><span class="text">Item 4</span></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="left-footer">
+                <img src="" class = "logo" alt="">
+            </div>
+
+            <div class="center-footer">
+                <ul class="footer-list">
+                    <a href="#">
+                        <li class="text nav-bar-item footer-menu-title">Artigos</li>
+                    </a>
+                    <a href="#">
+                        <li class="text nav-bar-item footer-menu-item">Ver todos os artigos</li>
+                    </a>
+                </ul>
+                <ul class="footer-list">
+                    <a href="#">
+                        <li class="text nav-bar-item footer-menu-title">Eventos</li>
+                    </a>
+                    <a href="#">
+                        <li class="text nav-bar-item footer-menu-item">Ver todos os eventos</li>
+                    </a>
+                </ul>
+                <ul class="footer-list">
+                    <a href="#">
+                        <li class="text nav-bar-item footer-menu-title">Sobre</li>
+                    </a>
+                    <a href="#">
+                        <li class="text nav-bar-item footer-menu-item">O que é a plataforma?</li>
+                        <a href="#">
+                            <li class="text nav-bar-item footer-menu-item">Desenvolvedores</li>
+                        </a>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="right">
+
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
