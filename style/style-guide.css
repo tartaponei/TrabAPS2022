@@ -1,3 +1,31 @@
-.button-area {
+div.button-area {
     margin: 20px 0;
+    height: 13rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 5px;
+}
+
+div.content {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+div.list-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+
+.right-form, .left-form {
+    display: grid;
+    gap: 19px;
 }

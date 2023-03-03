@@ -14,19 +14,19 @@
     <div class="header">
         <header>
             <div class="grid-item left">
-                <img src="" class = "logo" alt="">
+                <img src="img/LOGO.svg" class = "logo" alt="">
             </div>
             
             <div class="grid-item center">
                 <nav id="nav-bar">
                     <ul id="center-menu">
-                        <a href="#">
+                        <a class="nav-bar-a" href="#">
                             <li class="nav-bar-item text focus">Artigos</li>
                         </a>
-                        <a href="#">
+                        <a class="nav-bar-a" href="#">
                             <li class="nav-bar-item text">Eventos</li>
                         </a>
-                        <a href="#">
+                        <a class="nav-bar-a" href="#">
                             <li class="nav-bar-item text">Sobre</li>
                         </a>                       
                     </ul>
@@ -35,7 +35,7 @@
            
             <div class="grid-item right">
                 <ul id="side-menu">
-                    <a href="#">
+                    <a class="nav-bar-a" href="#">
                         <li class="text nav-bar-item">Área do Cadastrador</li>
                     </a>
                 </ul>
@@ -71,8 +71,10 @@
                 </div>
 
                 <div class="label-area">
-                    <span class="text etiqueta amarela">Etiqueta - 14px</span>
-                    <span class="text etiqueta azul">Etiqueta - 14px</span>
+                    <p class="labels-p">
+                        <span class="text etiqueta amarela">Etiqueta - 14px</span>
+                        <span class="text etiqueta azul">Etiqueta - 14px</span>
+                    </p> 
                 </div>
 
                 <div class="list-area">
@@ -100,10 +102,10 @@
         <div class="right-content">
             <div class="form-area">
                 <div class="button-area">
+                    <a href="" class="text botao extra-grande amarelo">Botão extra grande</a>
                     <a href="" class="text botao grande amarelo">Botão grande</a>
                     <a href="" class="text botao normal amarelo">Botão normal</a>
                     <a href="" class="text botao pequeno amarelo">Botão pequeno</a>
-                    <a href="" class="text botao extra-grande amarelo">Botão extra grande</a>
                     <a href="" class="text botao grande azul">Botão grande</a>
                 </div>
 
@@ -111,30 +113,36 @@
                     <form action="" class="formulario">
                         <div class="right-form">
                             <div class="field-area">
-                                <label for="" class="text label-form">Campo de texto</label><br>
-                                <input type="text" name="" id=""><br>
+                                <label for="text" class="text label-form">Campo de texto</label>
+                                <input type="text" name="" id="">
                             </div>
                             
                             <div class="field-area">
-                               <label for="" class="text label-form">Text area</label><br>
-                                <textarea name="" id="" cols="30" rows="10"></textarea><br> 
+                               <label for="" class="text label-form">Text area</label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea> 
                             </div>
                             
                             <div class="field-area">
-                                <label for="" class="text label-form">Checkbox</label><br>
+                                <label for="" class="text label-form">Checkbox</label>
 
-                                <div class="checkbox-area">
-                                    <input type="checkbox" name="" id=""> <span class="text">Item 1</span>  <br>
-                                    <input type="checkbox" name="" id="" class="text"> <span class="text">Item 2</span> <br>
-                                </div>
+                                <fieldset id="checkbox">
+                                    <div class="checkbox-area">
+                                        <input type="checkbox" name="checkbox" id=""> <span class="text">Item 1</span>  
+                                        <input type="checkbox" name="" id="checkbox" class="text"> <span class="text">Item 2</span> 
+                                    </div>
+                                </fieldset>
+                                
                             </div>
 
                             <div class="field-area">
-                                <label for="" class="text label-form">Radio button</label><br>
+                                <label for="" class="text label-form">Radio button</label>
 
-                                <div class="checkbox-area">
-                                    <input type="radio" name="" id=""> <span class="text">Item 1</span>  <br>
-                                    <input type="radio" name="" id="" class="text"> <span class="text">Item 2</span> <br>
+                                <div class="radio-area">
+                                    <fieldset id="radio">
+                                       <input type="radio" name="radio" id="" value=""> <span class="text">Item 1</span>  
+                                        <input type="radio" name="radio" id="" class="text" value=""> <span class="text">Item 2</span>  
+                                    </fieldset>
+                                    
                                 </div>
                             </div>
                             
@@ -142,7 +150,7 @@
 
                         <div class="left-form">
                             <div class="field-area">
-                                <label for="" class="label-form text">Combo box</label><br>
+                                <label for="" class="label-form text">Combo box</label>
                                 <div class="select">
                                     <select class="text" name="" id="">
                                         <option value="" class="combo-box-item text"><span class="text">Item 1</span></option>
@@ -167,28 +175,28 @@
 
             <div class="center-footer">
                 <ul class="footer-list">
-                    <a href="#">
-                        <li class="text nav-bar-item footer-menu-title">Artigos</li>
+                    <a class="nav-bar-a" href="#">
+                        <li class="text nav-bar-item footer-menu-title footer-menu-title-a">Artigos</li>
                     </a>
-                    <a href="#">
+                    <a class="nav-bar-a" href="#">
                         <li class="text nav-bar-item footer-menu-item">Ver todos os artigos</li>
                     </a>
                 </ul>
                 <ul class="footer-list">
-                    <a href="#">
-                        <li class="text nav-bar-item footer-menu-title">Eventos</li>
+                    <a class="nav-bar-a" href="#">
+                        <li class="text nav-bar-item footer-menu-title footer-menu-title-a">Eventos</li>
                     </a>
-                    <a href="#">
+                    <a class="nav-bar-a" href="#">
                         <li class="text nav-bar-item footer-menu-item">Ver todos os eventos</li>
                     </a>
                 </ul>
                 <ul class="footer-list">
-                    <a href="#">
-                        <li class="text nav-bar-item footer-menu-title">Sobre</li>
+                    <a class="nav-bar-a" href="#">
+                        <li class="text nav-bar-item footer-menu-title footer-menu-title-a">Sobre</li>
                     </a>
-                    <a href="#">
+                    <a class="nav-bar-a" href="#">
                         <li class="text nav-bar-item footer-menu-item">O que é a plataforma?</li>
-                        <a href="#">
+                        <a class="nav-bar-a" href="#">
                             <li class="text nav-bar-item footer-menu-item">Desenvolvedores</li>
                         </a>
                     </a>
