@@ -26,7 +26,7 @@
 }
 
 body, html {
-    width: fit-content;
+    /* width: fit-content; */
     margin: 0;
 }
 
@@ -123,6 +123,90 @@ a.nav-bar-a {
     color: var(--mostarda);
 }
 
+.header.cadastrador #side-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 27px;
+}
+
+.header.adm #side-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 27px;
+}
+
+.header .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    right: 0;
+    box-shadow: var(--sombra);
+    border-radius: 5px;
+}
+
+.header .dropdown-content.adicionar {
+    margin-right: 7rem;
+}
+
+.header .dropdown-content.config {
+    margin-right: 3.5rem;
+}
+
+.header .dropdown-content.usuarios {
+    margin-right: 11rem;
+}
+
+.dropdown-list {
+    padding: 0;
+    border-radius: 5px;
+}
+
+.dropdown-list:hover {
+    display: block;
+}
+
+.header .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    /* border-radius: 5px; */
+}
+
+.header .dropdown-content a:hover {
+    background-color: var(--mostarda);
+    display: block;
+}
+
+.nav-bar-item button {
+    border: 0;
+    background-color: var(--azul);
+}
+
+li.adicionar button:hover .dropdown-content.adicionar {
+    display:block;
+}
+
+li.config button:hover .dropdown-content.config {
+    display:block;
+}
+
+li.usuarios button:hover .dropdown-content.usuarios {
+    display:block;
+}
+
+.dropdown-list .dropdown-item {
+    color: var(--preto);
+    background-color: var(--amarelo-cinzento);
+    text-decoration: none;
+    list-style-type: none;
+    text-transform:none;
+    font-weight: 400;
+    text-align: left;
+}
+
+.dropdown-list .dropdown-item:visited {
+    color: var(--preto);
+}
+
 /* ================================== */
 /*               CONTENT              */
 /* ================================== */
@@ -139,6 +223,15 @@ footer, div.center-footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 2rem 3rem;
+}
+
+.footer .logo {
+    width: 150px;
+}
+
+.left-footer {
+    margin-top:20px;
+    margin-left: 10px;
 }
 
 div.center-footer {

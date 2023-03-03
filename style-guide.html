@@ -8,40 +8,18 @@
     <link rel="stylesheet" href="./style/root.css">
     <link rel="stylesheet" href="./style/style-guide.css">
 
+    <script src="./components/header-deslogado.js"></script>
+    <script src="./components/header-cadastrado.js"></script>
+    <script src="./components/header-adm.js"></script>
+
     <title>Guia de Estilo</title>
 </head>
 <body>
-    <div class="header">
-        <header>
-            <div class="grid-item left">
-                <img src="img/LOGO.svg" class = "logo" alt="">
-            </div>
-            
-            <div class="grid-item center">
-                <nav id="nav-bar">
-                    <ul id="center-menu">
-                        <a class="nav-bar-a" href="#">
-                            <li class="nav-bar-item text focus">Artigos</li>
-                        </a>
-                        <a class="nav-bar-a" href="#">
-                            <li class="nav-bar-item text">Eventos</li>
-                        </a>
-                        <a class="nav-bar-a" href="#">
-                            <li class="nav-bar-item text">Sobre</li>
-                        </a>                       
-                    </ul>
-                </nav>
-            </div>
-           
-            <div class="grid-item right">
-                <ul id="side-menu">
-                    <a class="nav-bar-a" href="#">
-                        <li class="text nav-bar-item">Área do Cadastrador</li>
-                    </a>
-                </ul>
-            </div>
-        </header>
-    </div>
+    <header-deslogado></header-deslogado>
+
+    <header-cadastrado></header-cadastrado>
+
+    <header-adm></header-adm>
 
     <div class="content">
         <div class="left-content">
@@ -170,7 +148,9 @@
     <div class="footer">
         <footer>
             <div class="left-footer">
-                <img src="" class = "logo" alt="">
+                <a href="index.html">
+                    <img src="img/LOGO.svg" class = "logo" alt="">
+                </a>
             </div>
 
             <div class="center-footer">
