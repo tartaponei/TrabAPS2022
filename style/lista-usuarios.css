@@ -1,0 +1,38 @@
+table {
+    /* margin: 0 auto; */
+    border-collapse: collapse;
+    border-style: hidden;
+    /*Remove all the outside
+    borders of the existing table*/
+    width: 100%;
+    text-align: center;
+}
+
+table .nome {
+    text-align: left;
+}
+
+table td {
+    padding: 0.5rem;
+    border: 1px solid var(--cinza);
+}
+table th {
+    padding: 0.5rem;
+    border: 1px solid var(--cinza);
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin-top: 60px;
+    gap: 10px;
+}
+
+fieldset {
+    margin: 0;
+}
+
+.checkbox-area {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}

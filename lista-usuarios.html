@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="./style/lista-usuarios.css">
+    <link rel="stylesheet" href="./style/lista-artigos-eventos.css">
+
+    <script src="./components/header-adm.js"></script>
+    <script src="./components/footer.js"></script>
+
+    <title>Usuários</title>
+</head>
+<body>
+    <header-adm></header-adm>
+
+    <div class="content">
+        <div class="title-area">
+            <h1>Todos os usuários</h1>
+
+            <div class="select-ordenar">
+                <label for="ordenar" class="text">Ordenar por:</label>
+                <div class="select">
+                    <select class="text ordenar" name="ordenar" id="orndenar">
+                        <option value="data-cadastro-recente" class="combo-box-item text"><span class="text">Data do cadastro (mais recente)</span></option>
+                        <option value="data-cadastro-antiga" class="combo-box-item text"><span class="text">Data do cadastro (mais antiga)</span></option>
+                        <option value="ordem-alfabetica-az" class="combo-box-item text"><span class="text">Ordem alfabética (A-Z)</span></option>
+                        <option value="ordem-alfabetica-za" class="combo-box-item text"><span class="text">Ordem alfabética (Z-A)</span></option>
+                    </select>
+                </div>
+                
+            </div>
+
+            <div class="busca">
+                <form action="" class="form-busca">
+                    <label for="busca" class="text">Busque:</label>
+                    <input type="search" name="busca" id="busca">
+                </form>
+            </div>
+        </div>
+
+        <hr class="divisor-lista">
+        
+        <div class="lista">
+            <div class="filtro">
+                <label for="" class="label-form text grande">Filtrar por:</label>
+                <fieldset id="checkbox">
+                    <div class="checkbox-area">
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="checkbox" id=""> <span class="text normal">Cadastradores</span> 
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="" id="checkbox" class="text"> <span class="text normal">Administradores</span>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="" id="checkbox" class="text"> <span class="text normal">Todos os usuários</span> 
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="tabela">
+                <table class="tabela">
+                    <tr class="titulos">
+                        <th class="etiqueta azul">Nome completo</th>
+                        <th class="etiqueta azul">Login</th>
+                        <th class="etiqueta azul">Status</th>
+                    </tr>
+
+                    <tr class="usuario">
+                        <td class="nome info destacada">fulano ciclano da silva pereira</td>
+                        <td class="login info destacada-regular">@fulaninho123</td>
+                        <td class="status info destacada">cadastrador</td>
+                        <td class="alterar-dados info destacada"><a class="link-tabela" href="">Aletrar dados</a></td>
+                        <td class="alterar-dados info destacada"><a class="link-excluir" href="">Excluir conta</a></td>
+                    </tr>
+
+                    <tr class="usuario">
+                        <td class="nome info destacada">sarah ellen de oliveira borrete</td>
+                        <td class="login info destacada-regular">@sarah456</td>
+                        <td class="status info destacada">administrador</td>
+                        <td class="alterar-dados info destacada"><a class="link-tabela" href="">Aletrar dados</a></td>
+                        <td class="alterar-dados info destacada"><a class="link-excluir" href="">Excluir conta</a></td>
+                    </tr>
+
+                    <tr class="usuario">
+                        <td class="nome info destacada">caroline s oliveira</td>
+                        <td class="login info destacada-regular">@carololiveira</td>
+                        <td class="status info destacada">administrador</td>
+                        <td class="alterar-dados info destacada"><a class="link-tabela" href="">Aletrar dados</a></td>
+                        <td class="alterar-dados info destacada"><a class="link-excluir" href="">Excluir conta</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer-c></footer-c>
+</body>
+</html>

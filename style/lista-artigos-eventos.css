@@ -21,10 +21,6 @@ form.form-busca {
     margin-left: 12rem;
 }
 
-hr.divisor-lista {
-    border-top: 2px solid var(--mostarda);
-}
-
 hr.divisor-comum {
     border-top: 1px solid var(--cinza);
 }
