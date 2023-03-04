@@ -42,9 +42,9 @@ class Header_Adm extends HTMLElement {
                                         <a href="" class="text dropdown-item">
                                             <li>Todos os usuários</li>
                                         </a>
-                                        <a href="" class="text dropdown-item">
+                                        <!-- <a href="" class="text dropdown-item">
                                             <li>Solicitações de exclusão de conta</li>
-                                        </a>
+                                        </a> -->
                                     </ul>
                                 </div>
                             </button>
