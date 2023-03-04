@@ -23,6 +23,7 @@
 
     background: var(--branco-amarelado);
     color: var(--preto);
+    font-family: 'Work Sans', sans-serif
 }
 
 body, html {
@@ -115,7 +116,7 @@ a.nav-bar-a {
 }
 
 .nav-bar-item:hover {
-    color: var(--mostarda-hover);
+    color: var(--mostarda);
     text-decoration: none;
 }
 
@@ -253,6 +254,7 @@ ul.footer-list li {
 }
 .footer-menu-item {
     font-size: 10px;
+    font-weight:normal;
 }
 
 .footer-menu-title-a {
@@ -302,24 +304,32 @@ ul.footer-list li {
 
 /* ----------- TÍTULOS ------------- */
 
-h1.titulo-h1 {
+h1 {
     color: var(--mostarda);
     font-size: 40px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
 }
 
-h2.subtitulo-h2 {
+h2 {
     color: var(--azul);
     font-size: 32px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
 }
 
-h3.subtitulo-h3 {
+h3 {
     color: var(--mostarda);
     font-size: 24px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
 }
 
-h4.subtitulo-h4 {
+h4 {
     color: var(--azul);
     font-size: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
 }
 
 /* ------------- ETIQUETAS ------------- */
@@ -369,7 +379,8 @@ h4.subtitulo-h4 {
 
 .link.texto {
     font-size: 13px;
-    font-weight: regular;
+    /* font-weight: normal; */
+    text-decoration: underline;
 }
 
 .link:hover {
@@ -426,6 +437,11 @@ input, textarea, select {
     border: none;
     padding: 5.5px;
     background-color: var(--branco-amarelado);
+    font-family: 'Work Sans', sans-serif;
+}
+
+input:focus {
+    outline: 2px solid var(--mostarda)
 }
 
 select {
@@ -493,12 +509,12 @@ select.combo-box option:hover {
 
 .botao.extra-grande {
     font-size: 20px;
-    padding: 15.5px 25px;
+    padding: 15.5px 35px;
 }
 
 .botao.grande {
     font-size: 16px;
-    padding: 14px 25px;
+    padding: 14px 40px;
 }
 
 .botao.normal {

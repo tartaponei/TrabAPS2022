@@ -1,0 +1,57 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content .right {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding-right: 5rem;
+}
+
+.right img {
+    margin-top: 30px;
+}
+
+.content .left {
+    padding-left: 3rem;
+}
+
+.content a {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.fields {
+    display:grid;
+    gap: 40px;
+}
+
+.below-senha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.checkbox-senha {
+    left: 4.2rem;
+    position: relative;
+}
+
+form {
+    padding: 71px 33px;
+}
+
+input[type=text] {
+    width: 25rem;
+}
+
+form input[type=submit] {
+    margin-left: 60%;
+}

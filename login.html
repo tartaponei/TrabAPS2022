@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="./style/login.css">
+
+    <script src="components/header-deslogado.js"></script>
+    <script src="components/footer.js"></script>
+
+    <script src="js/login.js"></script>
+    <script src="js/form.js"></script>
+
+    <title>Faça login</title>
+</head>
+<body>
+    <header-deslogado></header-deslogado>
+
+    <div class="content">
+        <div class="left">
+            <form action="">
+                <h2>Bem-vindo de volta!</h2>
+
+                <div class="fields">
+                    <div class="field-area">
+                        <label for="login" class="text label-form">Login</label>
+                        <input required type="text" name="login" id="login">
+                    </div>
+
+                    <div class="field-area">
+                        <label for="senha" class="text label-form">Senha</label>
+                        <input required type="password" name="senha" id="senha">
+                    </div>
+                </div>
+                
+
+                <div class="below-senha">
+                    <div class="esqueceu-senha">
+                        <a href="" class="link texto">Esqueceu sua senha?</a>
+                    </div>
+                    
+                    <div class="checkbox-senha">
+                        <input type="checkbox" name="mostrar_senha" id="mostrar_senha" onclick="mostrarSenha()"> 
+                        <span class="text">Mostrar senha</span>  
+                    </div>
+                    
+                </div>
+                <input type="submit" value="Entrar" class="text botao grande amarelo">
+                <!-- <a href="" class="text botao grande amarelo">Entrar</a> -->
+                
+
+            </form>
+        </div>
+
+        <div class="right">
+            <h1>Foi convidado a cadastrar conteúdo na plataforma?</h1>
+            <a href="cadastro.html" class="text botao extra-grande azul">Faça o cadastro</a>
+            <img src="./img/ilustracao-login.svg" alt="">
+        </div>
+    </div>
+
+    <footer-c></footer-c>
+</body>
+</html>

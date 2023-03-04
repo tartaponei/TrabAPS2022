@@ -1,0 +1,50 @@
+div.content {
+    margin: 7% 20%;
+}
+
+form {
+    padding: 30px 49px;
+}
+
+.fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h2, .chamada-login {
+    text-align: center;
+}
+
+.field-area {
+    margin-bottom: 30px;
+}
+
+.below-senha {
+    /* display: grid;
+    grid-template-areas: "1 2"; */
+    display: flex;
+}
+
+.instrucoes {
+    right: 0;
+}
+
+.checkbox-senha {
+    left: 10%;
+    position: relative;
+}
+
+
+.fields .left {
+    padding-right: 15px;
+}
+
+.fields .right {
+    padding-left: 15px;
+}
+
+input.botao {
+    right: 0;
+    margin-left: 15rem;
+    position: relative;
+}

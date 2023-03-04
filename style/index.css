@@ -1,0 +1,16 @@
+.content .left img {
+    width: 30rem;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    justify-items: end;
+    align-items: center;
+    gap: 44px;
+    min-height:30rem;
+}
+
+.content .right {
+    padding-right: 10px;
+}

@@ -18,7 +18,7 @@ class Header_Deslogado extends HTMLElement {
                     <nav id="nav-bar">
                         <ul id="center-menu">
                             <a class="nav-bar-a" href="#">
-                                <li class="nav-bar-item text focus">Artigos</li>
+                                <li class="nav-bar-item text">Artigos</li>
                             </a>
                             <a class="nav-bar-a" href="#">
                                 <li class="nav-bar-item text">Eventos</li>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="./style/cadastro.css">
+
+    <script src="components/header-deslogado.js"></script>
+    <script src="components/footer.js"></script>
+
+    <!-- <script src="js/cadastro.js"></script> -->
+    <script src="js/form.js"></script>
+
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <header-deslogado></header-deslogado>
+
+    <div class="content">
+        <form action="">
+            <h2>Faça seu cadastro</h2>
+            <div class="fields">
+                <div class="left">
+                    <div class="field-area a">
+                        <label for="nome" class="text label-form">Nome completo</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+
+                    <div class="field-area b">
+                        <label for="cpf" class="text label-form">CPF</label>
+                        <input type="cpf" name="cpf" id="cpf" placeholder="Somente números">
+                    </div>
+
+                    <div class="field-area c">
+                        <label for="tel" class="text label-form">Telefone</label>
+                        <input type="tel" name="tel" id="tel" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" placeholder="(11)11111-1111">
+                    </div>
+
+                    <div class="field-area d">
+                        <label for="email" class="text label-form">email</label>
+                        <input type="email" name="email" id="email" placeholder="nome@exemplo.com">
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="field-area e">
+                        <label for="login" class="text label-form">Crie um nome de usuário</label>
+                        <input type="text" name="login" id="login">
+                    </div>
+
+                    <div class="field-area f">
+                        <label for="senha" class="text label-form">Crie uma senha</label>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+
+                    <div class="below-senha g">
+                        <div class="instrucoes text pequeno negrito">
+                            <p>Mínimo de 8 caracteres e máximo de 32.</p>
+                            <p>Precisa ter</p>
+                            <ul>
+                                <li>1 letra maiúscula (ABCDE)</li>
+                                <li>1 letra minúscula (abcde)</li>
+                                <li>1 número (12345)</li>
+                                <li>1 caractere especial (@#*$%)</li>
+                            </ul>
+                        </div>
+                        <div class="checkbox-senha">
+                            <input type="checkbox" name="mostrar_senha" id="mostrar_senha" onclick="mostrarSenha()"> 
+                            <span class="text">Mostrar senha</span>  
+                        </div>
+                    </div>
+
+                    <div class="field-area h">
+                        <label for="repete-senha" class="text label-form">Repita a senha</label>
+                        <input required type="password" name="repete-senha" id="repete-senha">
+                    </div>
+
+                    <input type="submit" value="Cadastrar" class="botao grande amarelo">
+                </div>
+            </div>
+            
+        </form>
+
+        <p class="text grande negrito chamada-login">Já possui cadastro? <a href="login.html" class="link grande">Faça login.</a></p>
+    </div>
+
+    <footer-c></footer-c>
+</body>
+</html>
