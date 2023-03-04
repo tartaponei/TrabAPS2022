@@ -1,0 +1,46 @@
+div.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+div.content.adm {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+}
+
+div.message-area {
+    width: 300px;
+    text-align: center;
+}
+
+h3.estatistica {
+    color: var(--preto);
+    margin: 5px 0;
+}
+
+.message-area .etiqueta, .message-area .text {
+    margin: 0;
+}
+
+.button-area {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 23px;
+    justify-items: start;
+}
+
+.button-area.adm {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 23px;
+    justify-items: start;
+    align-items: center;
+}
+
+/* .botao.extra-grande {
+    padding-left: 10px;
+    padding-right: 10px;
+} */

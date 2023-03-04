@@ -408,7 +408,7 @@ h4 {
 /*             FORMULÁRIOS            */
 /* ================================== */
 
-form {
+form, .message-area {
     background-color: var(--amarelo-cinzento);
     border-radius: 20px;
     padding: 18px 26px;
@@ -464,8 +464,8 @@ select {
     /* padding: 5.5px; */
     cursor: pointer;
     line-height: 1.1;
-    background-color: #fff;
-    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    /* background-color: #fff; */
+    /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
     display: grid;
     border-radius: 5px;
 

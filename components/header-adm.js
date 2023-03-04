@@ -58,10 +58,10 @@ class Header_Adm extends HTMLElement {
 
                                 <div class="dropdown-content adicionar">
                                     <ul class="dropdown-list adicionar">
-                                        <a href="" class="text dropdown-item">
+                                        <a href="cadastrar-autor.html" class="text dropdown-item">
                                             <li>Novo autor/artigo</li>
                                         </a>
-                                        <a href="" class="text dropdown-item">
+                                        <a href="cadastrar-evento.html" class="text dropdown-item">
                                             <li>Novo evento</li>
                                         </a>
                                         <a href="" class="text dropdown-item">

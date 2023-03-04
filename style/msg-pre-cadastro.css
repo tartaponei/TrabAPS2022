@@ -1,0 +1,9 @@
+.button-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+h4 {
+    margin: 0;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="./style/pag-inicial.css">
+
+    <script src="./components/header-adm.js"></script>
+    <script src="./components/footer.js"></script>
+
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header-adm></header-adm>
+
+    <div class="content adm">
+        <div class="left">
+            <h1>Olá, <span name="nome-usuario" id="nome-usuario">Fulano</span>!</h1>
+            <h2>O que deseja fazer hoje?</h2>
+
+            <div class="button-area adm">
+                <a href="cadastrar-autor.html" class="botao extra-grande azul">Cadastrar novo autor/artigo</a>
+                <a href="lista-usuarios.html" class="botao extra-grande azul">Ver lista de usuarios</a>
+                <a href="cadastrar-evento.html" class="botao grande amarelo">Cadastrar novo evento</a>
+            </div>
+            
+        </div>
+
+        <div class="right">
+            <div class="message-area">
+                <p class="etiqueta amarela">Estatísticas</p>
+                <p class="text grande regular">A plataforma atualmente possui</p>
+
+                <h3 class="estatistica"><span id="num-artigos">xxx</span> artigos</h3>
+                <p class="text regular">em</p>
+                <h3 class="estatistica"><span id="num-eventos">xxx</span> eventos</h3>
+
+                <h3 class="estatistica"><span id="num-usuarios">xxx</span> usuários</h3>
+            </div>
+        </div>
+    </div>
+    
+    <footer-c></footer-c>
+</body>
+</html>

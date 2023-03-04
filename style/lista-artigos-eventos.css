@@ -1,0 +1,57 @@
+label {
+    font-weight: normal;
+}
+
+input[type=search] {
+    background-image: url('../img/icon-pesquisa.svg');
+    background-repeat: no-repeat;
+    background-position-x:5px;
+    background-position-y: center;
+}
+
+form.form-busca {
+    background-color: var(--branco-amarelado);
+    border-radius: 0;
+    padding: 0;
+    display: block;
+}
+
+.title-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.select-ordenar {
+    /* display: flex; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-area: none; */
+    height: 26px; 
+}
+
+.select-ordenar::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    margin: 5.5px;
+    background-color: var(--mostarda);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+}
+
+.titulo-artigo {
+    color: var(--preto);
+}
+
+.link-artigo {
+    text-decoration: none;
+}
+
+.link-artigo:hover {
+    text-decoration: underline;
+    color: var(--azul);
+}
+
+.titulo-artigo:hover {
+    color: var(--azul);
+}

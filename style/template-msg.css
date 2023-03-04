@@ -1,0 +1,26 @@
+.message-area {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding: 57px 44px;
+    text-align: center;
+}
+
+div.content {
+    margin: 100px 0;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.button-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    justify-items: end;
+}

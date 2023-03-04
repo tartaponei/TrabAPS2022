@@ -1,0 +1,25 @@
+.button-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
+div.field-area {
+    text-align: left;
+}
+
+.area-voltar {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 34px;
+    margin-left: 118px;
+}
+
+div.content {
+    margin-top: 50px;
+}
+
+form {
+    padding: 0;
+}

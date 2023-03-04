@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="./style/lista-artigos-eventos.css">
+
+    <script src="./components/header-deslogado.js"></script>
+    <script src="./components/footer.js"></script>
+
+    <title>Artigos</title>
+</head>
+<body>
+    <header-deslogado></header-deslogado>
+
+    <div class="content">
+        <div class="title-area">
+            <h1>Todos os artigos</h1>
+
+            <div class="select-ordenar">
+                <label for="ordenar" class="text">Ordenar por:</label>
+                <select class="text select ordenar" name="ordenar" id="orndenar">
+                    <option value="data-evento-recente" class="combo-box-item text"><span class="text">Data do evento (mais recente)</span></option>
+                    <option value="data-evento-antiga" class="combo-box-item text"><span class="text">Data do evento (mais antiga)</span></option>
+                    <option value="ordem-alfabetica-az" class="combo-box-item text"><span class="text">Ordem alfabética (A-Z)</span></option>
+                    <option value="ordem-alfabetica-za" class="combo-box-item text"><span class="text">Ordem alfabética (Z-A)</span></option>
+                </select>
+            </div>
+
+            <div class="busca">
+                <form action="" class="form-busca">
+                    <label for="busca" class="text">Busque:</label>
+                    <input type="search" name="busca" id="busca">
+                </form>
+            </div>
+        </div>
+
+        <hr class="divisor-lista">
+
+        <div class="artigo">
+            <a href="" class="link-artigo">
+                <h4 class="titulo-artigo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+            </a>
+            
+            <div class="area-info">
+                <div class="info-evento">
+                    <span class="info nao-destacada autores">fulano de souza, ciclano silva pereira, beltrano oliveira aguiar, joão pedro da silva</span>
+                    <span class="text pequeno negrito evento">Nome do evento</span>
+                    <span class="text pequeno regular ano">AAAA</span>
+                </div>
+                <div class="botoes">
+                    <a href="" class="botao normal amarelo">Gerar referência bibliográfica</a>
+                    <a href="" class="baixar">
+                        <img src="./img/icon-download.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <p class="resumo text normal regular">
+                Resumo do artigo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        
+    </div>
+
+    <footer-c></footer-c>
+</body>
+</html>
