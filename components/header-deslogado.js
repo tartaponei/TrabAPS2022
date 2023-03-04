@@ -17,10 +17,10 @@ class Header_Deslogado extends HTMLElement {
                 <div class="grid-item center">
                     <nav id="nav-bar">
                         <ul id="center-menu">
-                            <a class="nav-bar-a" href="#">
+                            <a class="nav-bar-a" href="lista-todos-artigos.html">
                                 <li class="nav-bar-item text">Artigos</li>
                             </a>
-                            <a class="nav-bar-a" href="#">
+                            <a class="nav-bar-a" href="lista-todos-eventos.html">
                                 <li class="nav-bar-item text">Eventos</li>
                             </a>
                             <a class="nav-bar-a" href="#">

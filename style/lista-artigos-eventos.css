@@ -1,3 +1,7 @@
+div.content {
+    margin: 75px 121px;
+}
+
 label {
     font-weight: normal;
 }
@@ -14,22 +18,44 @@ form.form-busca {
     border-radius: 0;
     padding: 0;
     display: block;
+    margin-left: 12rem;
+}
+
+hr.divisor-lista {
+    border-top: 2px solid var(--mostarda);
+}
+
+hr.divisor-comum {
+    border-top: 1px solid var(--cinza);
+}
+
+p.resumo {
+    margin: 26.6px 0;
+    text-align: justify;
 }
 
 .title-area {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
 }
 
+.busca {
+    right: 0;
+}
 
 .select-ordenar {
-    /* display: flex; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-area: none; */
-    height: 26px; 
+    grid-template-columns: 1fr 3fr;
+    height: 26px;
+    display: grid;
+    align-items: center;
 }
 
-.select-ordenar::after {
+h1 {
+    margin: 0;
+}
+
+.select::after {
     content: "";
     width: 0.8em;
     height: 0.5em;
@@ -54,4 +80,31 @@ form.form-busca {
 
 .titulo-artigo:hover {
     color: var(--azul);
+}
+
+.area-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.area-ano {
+    display: grid;
+    grid-template-columns: 50px 40px;
+}
+
+.info-evento {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.area-info .botoes .referencia {
+    margin-left: 20.7rem;
+}
+
+.area-info .botoes .ver-artigos {
+    margin-left: 26rem;
+}
+
+.botoes .botao.referencia {
+    margin-right: 17px;
 }
