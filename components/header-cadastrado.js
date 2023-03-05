@@ -65,7 +65,7 @@ class Header_Cadastrado extends HTMLElement {
 
                                 <div class="dropdown-content config">
                                     <ul class="dropdown-list config">
-                                        <a href="" class="text dropdown-item">
+                                        <a href="alterar-dados.html" class="text dropdown-item">
                                             <li>Meus dados</li>
                                         </a>
                                     </ul>

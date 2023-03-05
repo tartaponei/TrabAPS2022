@@ -1,0 +1,63 @@
+div.content {
+    margin: 4% 15%;
+}
+
+.area-voltar {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+form {
+    padding: 50px;
+}
+
+.autocomplete {
+    position: relative;
+}
+
+datalist {
+    color: var(--preto);
+}
+
+h2 {
+    text-align: center;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40%;
+}
+
+.novo-autor {
+    display: grid;
+    gap: 19px;
+    margin-top: 20px;
+}
+
+.cadastrar-novo-autor {
+    cursor:pointer;
+}
+
+.cpf-email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: center;
+}
+
+.data-sigla-vinculo, .grau-cv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+autor-cadastrado {
+    background-color: var(--cinza);
+    width: 100%;
+    padding: 6px 11px;
+    display: block;
+    padding: 1px 10px;
+}

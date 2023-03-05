@@ -17,6 +17,83 @@
     <title>Alterar seus dados</title>
 </head>
 <body>
+
+    <header-cadastrado></header-cadastrado>
+
+    <div class="content">
+        <div class="dados-comuns">
+            <form action="" class="alterar-dados">
+                <h2>Altere seus dados</h2>
+                <div class="area-nome">
+                    <div class="field-area">
+                        <label for="nome" class="text label-form">Nome completo</label>
+                        <input type="text" name="nome" id="nome" value="Nome de alguém" readonly>
+                    </div>
+                </div>
+                
+                <div class="tel-email">
+                    <div class="field-area">
+                        <label for="tel" class="text label-form">Telefone</label>
+                        <input type="tel" placeholder="(11)11111-1111" name="tel" id="tel">
+                    </div>
+
+                    <div class="field-area">
+                        <label for="email" class="text label-form">E-mail</label>
+                        <input type="email" placeholder="nome@exemplo.com" name="email" id="email">
+                    </div>
+                </div>
+
+                <input type="submit" class="botao normal amarelo salvar-dados" value="Salvar dados">
+            </form>
+        </div>
+            
+        <div class="dados-senha">
+            <form action="" class="alterar-senha">
+                <div class="left">
+                    <div class="field-area">
+                        <label for="senha-atual" class="text label-form">Senha atual</label>
+                        <input type="password" name="senha-atual" id="senha-atual">
+                    </div>
+
+                    <div class="field-area">
+                        <label for="nova-senha" class="text label-form">Crie uma nova senha</label>
+                        <input type="password" name="nova-senha" id="nova-senha">
+                    </div>
+
+                    <div class="below-senha">
+                        <div class="instrucoes text pequeno negrito">
+                            <p>Mínimo de 8 caracteres e máximo de 32.</p>
+                            <p>Precisa ter</p>
+                            <ul>
+                                <li>1 letra maiúscula (ABCDE)</li>
+                                <li>1 letra minúscula (abcde)</li>
+                                <li>1 número (12345)</li>
+                                <li>1 caractere especial (@#*$%)</li>
+                            </ul>
+                        </div>
+                        <div class="checkbox-senha">
+                            <input type="checkbox" name="mostrar_senha" id="mostrar_senha" onclick="mostrarSenha('nova-senha')"> 
+                            <span class="text normal">Mostrar senha</span>  
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="field-area">
+                        <label for="nova-senha-repete" class="text label-form">Repita a nova senha</label>
+                        <input type="password" name="nova-senha-repete" id="nova-senha-repete">
+                    </div>
+                    
+                    <div class="botoes">
+                        <input type="submit" class="botao normal amarelo salvar-senha" value="Salvar senha">
+                        <a href="" class="excluir-conta link grande">Excluir conta</a>
+                    </div>
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer-c></footer-c>
     
 </body>
 </html>

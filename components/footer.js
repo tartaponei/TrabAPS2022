@@ -15,18 +15,18 @@ class Footer extends HTMLElement {
 
             <div class="center-footer">
                 <ul class="footer-list">
-                    <a class="nav-bar-a" href="#">
+                    <a class="nav-bar-a" href="lista-todos-artigos.html">
                         <li class="text nav-bar-item footer-menu-title footer-menu-title-a">Artigos</li>
                     </a>
-                    <a class="nav-bar-a" href="#">
+                    <a class="nav-bar-a" href="lista-todos-artigos.html">
                         <li class="text nav-bar-item footer-menu-item">Ver todos os artigos</li>
                     </a>
                 </ul>
                 <ul class="footer-list">
-                    <a class="nav-bar-a" href="#">
+                    <a class="nav-bar-a" href="lista-todos-eventos.html">
                         <li class="text nav-bar-item footer-menu-title footer-menu-title-a">Eventos</li>
                     </a>
-                    <a class="nav-bar-a" href="#">
+                    <a class="nav-bar-a" href="lista-todos-eventos.html">
                         <li class="text nav-bar-item footer-menu-item">Ver todos os eventos</li>
                     </a>
                 </ul>

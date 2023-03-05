@@ -1,0 +1,60 @@
+div.content {
+    margin: 7% 15%;
+}
+
+.tel-email {
+   display: grid;
+   grid-template-columns: 1fr 1fr; 
+   gap: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 10px;
+}
+form {
+    padding: 50px;
+}
+
+.botao.salvar-dados {
+    margin-left: 80%;
+}
+
+.dados-comuns {
+    margin-bottom: 30px;
+}
+
+.alterar-senha{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.alterar-senha .left {
+    display: grid;
+    gap: 19px;
+}
+
+.below-senha {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.botoes {
+    display: grid;
+    justify-items: end;
+    gap: 7rem;
+    margin-top: 19px;
+}
+
+.botao.amarelo.salvar-senha {
+    padding: 9px 34px;
+}
+
+.link.excluir-conta, .link.excluir-conta:visited {
+    color: var(--erro)
+}
+
+.link.excluir-conta:hover {
+    color: var(--erro-hover)
+}
+
