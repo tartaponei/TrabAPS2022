@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./style/root.css">
-    <link rel="stylesheet" href="./style/lista-usuarios.css">
-    <link rel="stylesheet" href="./style/lista-artigos-eventos.css">
+    <link rel="stylesheet" href="./style/visualizar-artigo-evento.css">
 
     <script src="./components/header-deslogado.js"></script>
     <script src="./components/footer.js"></script>
@@ -17,8 +16,67 @@
 <body>
     <header-deslogado></header-deslogado>
 
-    <div class="content">
+    <div class="area-voltar">
+        <a onclick="history.back()">
+            <img src="./img/icon-voltar.svg" alt="" onclick="history.back()">
+        </a>
+        <p class="etiqueta azul">Artigos</p>
         
+     </div>
+
+    <div class="content">
+        <div class="title-area">
+            <h3 class="titulo-artigo" name="titulo-artigo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+        </div>
+
+        <hr class="divisor-lista">
+
+        <div class="content-artigo-evento">
+            <div class="left">
+                <h4 class="nome-evento" name="nome-evento">Nome do evento</h4>
+                <h4> <span class="edicao" name="edicao">X edição</span> - <span class="ano" name="ano">AAAA</span> </h4>
+
+                <p class="text grande resumo-artigo" name="resumo-artigo">Resumo do artigo. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p class="etiqueta amarela">Palavras-chave:</p>
+                <p class="info destacada-regular palavras-chave" name="palavras-chave">palavra, palavra, palavra, palavra, palavra</p>
+
+                <p class="etiqueta amarela">Prévia do PDF:</p>
+                <object data="sample-pdf.pdf" type="application/pdf" class="pdf-artigo" name="pdf-artigo"> <p>Não foi possível carregar o PDF. Baixe o arquivo diretamente.</p> </object>
+            </div>
+
+            <div class="right">
+                <div class="autores">
+                    <p class="etiqueta amarela">autores</p>
+                    <div class="autor">
+                        <span class="info destacada nome-autor" name="nome-autor">Nome do autor</span>
+                        <span class="info nao-destacada"><span class="universidade" name="universidade">UFRRJ</span> - <span class="vinculo" name="vinculo">Vínculo</span></span>
+                    </div>
+                    <div class="autor">
+                        <span class="info destacada nome-autor" name="nome-autor">Nome do autor</span>
+                        <span class="info nao-destacada"><span class="universidade" name="universidade">UFRRJ</span> - <span class="vinculo" name="vinculo">Vínculo</span></span>
+                    </div>
+                    <div class="autor">
+                        <span class="info destacada nome-autor" name="nome-autor">Nome do autor</span>
+                        <span class="info nao-destacada"><span class="universidade" name="universidade">UFRRJ</span> - <span class="vinculo" name="vinculo">Vínculo</span></span>
+                    </div>
+                    <div class="autor">
+                        <span class="info destacada nome-autor" name="nome-autor">Nome do autor</span>
+                        <span class="info nao-destacada"><span class="universidade" name="universidade">UFRRJ</span> - <span class="vinculo" name="vinculo">Vínculo</span></span>
+                    </div>
+                </div>
+                
+                <div class="referencia-bibliografica">
+                    <p class="etiqueta amarela">Referência bibliográfica</p>
+                    <p class="text grande negrito referencia">SOBRENOME, Nome Abreviado. Título: subtítulo. Edição. Local de publicação: Editora, data.</p>
+                </div>
+
+                <div class="estatisticas">
+                    <h3 class="downloads azul"><span class="num-downloads" name="num-downloads">xxx</span> downloads</h3>
+                    <h3 class="visualizacoes azul"><span class="num-visualizacoes" name="num-visualizacoes">xxxx</span> visualizações</h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer-c></footer-c>

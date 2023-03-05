@@ -1,0 +1,83 @@
+div.content {
+    margin: 34px 118px;
+}
+
+.titulo-artigo, .titulo-evento {
+    text-align: justify;
+}
+
+.content-artigo-evento h4 {
+    margin: 0;
+}
+
+h4.nome-evento {
+    margin-top: 24px;
+}
+
+.content-artigo-evento {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 60px;
+}
+
+.content-artigo-evento object {
+    width: 100%;
+    height: 500px;
+}
+
+.content-artigo-evento .right {
+    text-align: right;
+}
+
+.right .etiqueta {
+    margin-bottom: 5px;
+}
+
+p.referencia {
+    margin-top: 0;
+}
+
+.resumo-artigo, .descricao-evento {
+    text-align: justify;
+}
+
+.autores, .organizadores {
+    display: grid;
+    gap: 5px;
+}
+
+.autores, .referencia-bibliografica, .organizadores {
+    margin-bottom: 60px;
+}
+
+.autor, .organizador {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.estatisticas h3 {
+    margin: 0;
+}
+
+.trilha a{
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.trilha a:hover{
+    color: var(--azul-hover);
+    text-decoration: underline;
+}
+
+.left .etiqueta {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.left p.palavras-chave, .left p.endereco {
+    margin-top: 5px;
+}
+
+.area-trilhas {
+    margin-top: 60px;
+}

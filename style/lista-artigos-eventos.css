@@ -1,5 +1,5 @@
 div.content {
-    margin: 75px 121px;
+    margin: 75px 84px;
 }
 
 label {
@@ -18,7 +18,7 @@ form.form-busca {
     border-radius: 0;
     padding: 0;
     display: block;
-    margin-left: 12rem;
+    margin-left: 5rem;
 }
 
 hr.divisor-comum {
@@ -32,8 +32,20 @@ p.resumo {
 
 .title-area {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 35% 36% 29%;;
     align-items: center;
+}
+
+.title-area.trilha {
+    display: block;
+}
+
+.ano.trilha, .edicao.trilha {
+    margin: 5px 0;
+}
+
+.edicao.trilha {
+    margin-top: 24px;
 }
 
 .busca {
@@ -80,7 +92,7 @@ h1 {
 
 .area-info {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 
 .area-ano {
@@ -94,11 +106,11 @@ h1 {
 }
 
 .area-info .botoes .referencia {
-    margin-left: 20.7rem;
+    margin-left: 3rem;
 }
 
 .area-info .botoes .ver-artigos {
-    margin-left: 26rem;
+    margin-left: 8.9rem;
 }
 
 .botoes .botao.referencia {

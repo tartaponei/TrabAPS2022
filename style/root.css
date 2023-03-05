@@ -27,6 +27,15 @@
     font-family: 'Work Sans', sans-serif
 }
 
+.area-voltar {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 34px;
+    margin-left: 118px;
+    gap: 10px;
+}
+
 body, html {
     /* width: fit-content; */
     margin: 0;
@@ -214,7 +223,7 @@ li.usuarios button:hover .dropdown-content.usuarios {
 /* ================================== */
 
 div.content {
-    margin: 75px 84px;
+    margin: 55px 70px;
 }
 
 /* ================================== */
@@ -324,6 +333,10 @@ h3 {
     font-size: 24px;
     font-family: 'Merriweather', serif;
     font-weight: bold;
+}
+
+h3.azul {
+    color: var(--azul);
 }
 
 h4 {
