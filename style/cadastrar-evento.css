@@ -1,0 +1,27 @@
+div.content {
+    margin: 4% 15%;
+}
+
+form {
+    padding: 30px 49px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.area-voltar {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.datas-edicao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.salvar-evento {
+    margin-left: 70%;
+}

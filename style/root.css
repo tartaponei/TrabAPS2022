@@ -16,6 +16,7 @@
     --erro: #DF3F3F;
     --erro-hover: #922c2c;
     --correto: #40A84A;
+    --correto-hover: #2b6d31;
 
     --erro-fundo: rgb(223, 63, 63, 0.15);
     --correto-fundo: rgb(64, 168, 74, 0.15);
@@ -34,6 +35,7 @@
     margin-top: 34px;
     margin-left: 118px;
     gap: 10px;
+    cursor: pointer;
 }
 
 body, html {
@@ -374,12 +376,12 @@ hr.divisor-lista {
 }
 
 .info.destacada-regular {
-    font-weight:regular;
+    font-weight:normal;
     font-size: 16px;
 }
 
 .info.nao-destacada {
-    font-weight:regular;
+    font-weight:normal;
     font-size: 13px;
 }
 
@@ -465,6 +467,12 @@ fieldset {
     padding: 0;
 }
 
+input[type=file] {
+    background-color: var(--amarelo-cinzento);
+    border: 0;
+    box-shadow: none;
+}
+
 input, textarea, select {
     box-shadow: var(--sombra);
     border-radius: 5px;
@@ -539,6 +547,7 @@ select.combo-box option:hover {
     box-shadow: var(--sombra);
     float: left;
     text-align: center;
+    cursor: pointer;
 }
 
 .botao.extra-grande {

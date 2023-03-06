@@ -1,0 +1,18 @@
+.button-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+}
+
+.message-area {
+    width: 460px;
+}
+
+.excluir-conta {
+    background-color: var(--erro);
+    color: var(--branco-amarelado);
+}
+
+.excluir-conta:hover {
+    background-color: var(--erro-hover);
+}

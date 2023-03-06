@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/root.css">
+    <link rel="stylesheet" href="./style/cadastrar-artigo.css">
+
+    <script src="./components/header-cadastrado.js"></script>
+    <script src="./components/footer.js"></script>
+    <script src="./components/palavra-cadastrada.js"></script>
+    <script src="./js/criar-artigo.js"></script>
+
+    <title>Novo artigo</title>
+</head>
+<body>
+    <header-cadastrado></header-cadastrado>
+
+    <div class="area-voltar">
+        <a onclick="history.back()">
+            <img src="./img/icon-voltar.svg" alt="" onclick="history.back()">
+        </a>
+        <p class="etiqueta azul">Cadastrar novo autor/artigo</p>
+     </div>
+
+    <div class="content">
+        <form action="">
+            <h2>Cadastre um artigo</h2>
+            <div class="field-area">
+                <label for="titulo" class="text label-form">Título do artigo</label>
+                <input type="text" name="titulo" id="titulo">
+            </div>
+
+            <div class="field-area">
+                <label for="resumo" class="text label-form">Resumo do artigo</label>
+                 <textarea name="resumo" id="resumo" cols="30" rows="10"></textarea> 
+            </div>
+
+            <div class="data-palavras">
+                <div class="field-area">
+                    <label for="data" class="text label-form">Data de publicação</label>
+                    <input type="date" name="data" id="data">
+                </div>
+
+                <div class="palavras-chave">
+                    <div class="field-area">
+                        <label for="palavras-chave" class="text label-form">Palavras chave</label>
+                        <input type="text" name="palavras-chave" id="palavras-chave">
+                    </div>
+                </div>
+            </div>
+
+            <div class="area-cadastrados">
+                <a onclick="incluirCadastrados()" class="adicionar-palavra botao pequeno azul">Adicionar</a>
+                <div id="cadastrados"></div>
+            </div>
+
+            <div class="field-area">
+                <label for="pdf" class="text label-form">Arquivo PDF do artigo</label>
+                <input type="file" name="pdf" id="pdf" accpet=".pdf">
+            </div>
+
+            <input type="submit" class="botao grande amarelo" value="Salvar artigo">
+        </form>
+    </div>
+
+    <footer-c></footer-c>
+    
+</body>
+</html>

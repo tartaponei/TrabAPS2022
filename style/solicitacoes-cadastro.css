@@ -1,0 +1,11 @@
+.link-aprovar {
+    color: var(--correto);
+}
+
+.link-aprovar:visited {
+    color: var(--correto);
+}
+
+.link-aprovar:hover {
+    color: var(--correto-hover);
+}

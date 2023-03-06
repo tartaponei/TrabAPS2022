@@ -1,0 +1,51 @@
+div.content {
+    margin: 4% 15%;
+}
+
+form {
+    padding: 30px 49px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.area-voltar {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.data-palavras {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+}
+
+.palavras-chave {
+    display: grid;
+}
+
+.adicionar-palavra{
+    margin-left: 40rem;
+    cursor: pointer;
+}
+
+.area-cadastrados{
+    display: grid;
+    text-align: right;
+}
+
+p#palavra {
+    background-color: var(--cinza);
+    padding: 2px 5px;
+    margin: 10px 5px;
+}
+
+palavra-cadastrada {
+    display: inline-block;
+}
+
+input[type=submit] {
+    margin-left: 70%;
+}
