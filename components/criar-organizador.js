@@ -1,22 +1,29 @@
-<div class="novo-autor">
+class Criar_Organizador extends HTMLElement {
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+        this.innerHTML = `
+        <div class="novo-organizador">
     <div class="field-area">
-        <label for="nome-autor" class="text label-form">Nome completo do autor</label>
-        <input type="text" name="nome-novo-autor" id="nome-novo-autor">
+        <label for="nome-novo-organizador" class="text label-form">Nome completo do organizador</label>
+        <input type="text" name="nome-novo-organizador" id="nome-novo-organizador">
     </div>
 
     <div class="cpf-email">
         <div class="field-area">
-            <label for="cpf-autor" class="text label-form">CPF do autor</label>
-            <input type="number" maxlength="11" minlength="11" name="cpf-autor" id="cpf-autor">
+            <label for="cpf-organizador" class="text label-form">CPF do organizador</label>
+            <input type="number" maxlength="11" minlength="11" name="cpf-organizador" id="cpf-organizador">
         </div>
         <div class="field-area">
-            <label for="email-autor" class="text label-form">E-mail do autor</label>
-            <input type="email" name="email-autor" id="email-autor">
+            <label for="email-organizador" class="text label-form">E-mail do organizador</label>
+            <input type="email" name="email-organizador" id="email-organizador">
         </div>
     </div>
     <div class="data-sigla-vinculo">
         <div class="field-area">
-            <label for="data-nasc" class="text label-form">Data de nascimento do autor</label>
+            <label for="data-nasc" class="text label-form">Data de nascimento do organizador</label>
             <input type="date" name="data-nasc" id="data-nasc">
         </div> 
 
@@ -38,9 +45,9 @@
 
     <div class="grau-cv">
         <div class="field-area">
-            <label for="grau-autor" class="label-form text">Grau de escolaridade</label>
+            <label for="grau-organizador" class="label-form text">Grau de escolaridade</label>
             <div class="select">
-                <select class="text select" name="grau-autor" id="grau-autor">
+                <select class="text select" name="grau-organizador" id="grau-organizador">
                     <option value="graduado" class="combo-box-item text"><span class="text">Graduado</span></option>
                     <option value="pos-graduado" class="combo-box-item text"><span class="text">Pós-graduado</span></option>
                     <option value="mestre" class="combo-box-item text"><span class="text">Mestre</span></option>
@@ -56,7 +63,10 @@
         </div>
 
         <a onclick="incluirCadastrados()" class="botao grande azul">Salvar</a>
-    
     </div>
 
-</div>
+</div>`
+    }
+  }
+
+  customElements.define('criar-organizador', Criar_Organizador);

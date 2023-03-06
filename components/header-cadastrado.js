@@ -45,10 +45,10 @@ class Header_Cadastrado extends HTMLElement {
                                         <a href="cadastrar-evento.html" class="text dropdown-item">
                                             <li>Novo evento</li>
                                         </a>
-                                        <a href="" class="text dropdown-item">
+                                        <a href="meus eventos.html" class="text dropdown-item">
                                             <li>Visualizar meus eventos</li>
                                         </a>
-                                        <a href="" class="text dropdown-item">
+                                        <a href="meus artigos.html" class="text dropdown-item">
                                             <li>Visualizar meus artigos</li>
                                         </a>
                                     </ul>

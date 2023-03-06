@@ -7,13 +7,14 @@
 
     <link rel="stylesheet" href="./style/root.css">
     <link rel="stylesheet" href="./style/cadastrar-autor.css">
+    <link rel="stylesheet" href="./style/adicionar-artigo.css">
 
     <script src="./components/header-cadastrado.js"></script>
     <script src="./components/footer.js"></script>
-    <script src="./components/criar-autor.js"></script>
-    <script src="./js/criar-autor.js"></script>
+    <script src="./components/criar-artigo.js"></script>
+    <script src="./js/criar-artigo.js"></script>
 
-    <title>Novo autor</title>
+    <title>Adicione artigos</title>
 </head>
 <body>
     <header-cadastrado></header-cadastrado>
@@ -22,30 +23,30 @@
         <a onclick="history.back()">
             <img src="./img/icon-voltar.svg" alt="" onclick="history.back()">
         </a>
-        <p class="etiqueta azul">Cadastrar novo autor/artigo</p>
+        <p class="etiqueta azul">Cadastrar novo evento</p>
      </div>
 
      <div class="content">
         <div class="form">
-            <form action="" autocomplete="off" class="pesquisar-autor">
-                <h2>Escolha os autores</h2>
+            <form action="" autocomplete="off" class="pesquisar-artigo">
+                <h2>Adicione artigos ao evento</h2>
 
                 <div class="field-area autocomplete">
-                    <label for="text" class="text label-form">Pesquisar nome do autor</label>
+                    <label for="text" class="text label-form">Pesquisar nome do artigo</label>
 
-                    <input type="text" name="nome-autor" list="nome-autor">
-                    <datalist id="nome-autor">
-                        <option value="autor1">Autor 1</option>
-                        <option value="joao">João</option>
+                    <input type="text" name="nome-artigo" list="nome-artigo">
+                    <datalist id="nome-artigo">
+                        <option value="artigo1">Artigo 1</option>
+                        <option value="1234">Coisas legais da Engenharia de Software</option>
                     </datalist>
                 </div>
 
                 <div class="botoes">
-                    <a onclick="adicionarFormNovoAutor()"  class="botao grande azul cadastrar-novo-autor">Cadastrar novo autor</a>
+                    <a onclick="adicionarFormNovoArtigo()"  class="botao grande azul cadastrar-novo-autor">Cadastrar novo artigo</a>
                     <input type="submit" class="botao grande amarelo" value="Continuar">
                 </div>
                 
-                <div id="novo-autor"></div>
+                <div id="novo-artigo"></div>
                 <div id="cadastrados"></div>
             </form>
         </div>

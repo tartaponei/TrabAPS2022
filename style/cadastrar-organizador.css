@@ -36,13 +36,13 @@ h2 {
     gap: 20%;
 }
 
-.novo-autor {
+.novo-organizador {
     display: grid;
     gap: 19px;
     margin-top: 20px;
 }
 
-.cadastrar-novo-autor {
+.cadastrar-novo-organizador {
     cursor:pointer;
 }
 
@@ -60,7 +60,7 @@ h2 {
     align-items: center;
 }
 
-autor-cadastrado {
+organizador-cadastrado {
     background-color: var(--cinza);
     width: 100%;
     padding: 6px 11px;
